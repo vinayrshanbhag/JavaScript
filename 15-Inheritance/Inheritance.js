@@ -3,7 +3,7 @@ var Vehicle = function(){
 }
 
 Vehicle.prototype.drive = function(dist){
-	console.log("vehicle driving");
+	debug("vehicle driving");
 	this.miles+=10;
 }
 
@@ -14,14 +14,14 @@ var Car = function(year){
 var EfficientVehicle = function(dist){
 	// this.miles = 0;
 	this.drive = function(){
-		console.log("drive efficiently...");
+		debug("drive efficiently...");
 	}
 }
 
 Car.prototype = new Vehicle();
 // var car1 = new Car(2014);
-// console.log(car1.year);
-// console.log(car1.miles);
+// debug(car1.year);
+// debug(car1.miles);
 // car1.drive(10);
 
 
@@ -29,8 +29,8 @@ Car.prototype = new Vehicle();
 // as undefined
 var car2 = new Car(2015);
 car2.__proto__ = new EfficientVehicle();
-console.log(car2.year);
-console.log(car2.miles);
+debug(car2.year);
+debug(car2.miles);
 car2.drive(10);
 
 

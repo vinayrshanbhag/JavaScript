@@ -18,25 +18,23 @@ foo(6);
   console.log("foo is redefined");
 }
 
-foo(7); */ 
+foo(7); */
 
-var foo = function(n){
-    console.log('function foo called with '+ n);
+var foo = function(n) {
+	console.log('function foo called with ' + n);
 }
- foo(6);
+foo(6);
 
-foo = function()
-{
-  console.log('function redefined');
+foo = function() {
+	console.log('function redefined');
 }
 
 foo(6);
 
 //Dont use below option as well
 
-var foo = function foo(n){
-     console.log('Function foo called agin with '+6);
+var foo = function foo(n) {
+	console.log('Function foo called agin with ' + 6);
 }
 
 foo(6);
-

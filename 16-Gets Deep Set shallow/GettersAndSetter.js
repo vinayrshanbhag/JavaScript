@@ -1,7 +1,7 @@
 var Car = function(){
 	this.miles = 0;
 	this.drive = function(dist){
-	 console.log("Vehicle driving...")
+	 debug("Vehicle driving...")
 	    this.miles+=dist;
 	};
 	
@@ -18,10 +18,10 @@ car1.year = 2013;
 
 var car2 = new Car();
 
-console.log(car1.miles);
-console.log(car2.miles);
+debug(car1.miles);
+debug(car2.miles);
 
-console.log(car1.year);
-console.log(car2.year);
+debug(car1.year);
+debug(car2.year);
 
 
