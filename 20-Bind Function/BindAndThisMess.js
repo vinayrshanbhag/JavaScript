@@ -13,14 +13,14 @@ var Car = function(){
   
   
   
-  setTimeout(finishTuneup.bind(this),2000);
+  setTimeout(finishTuneup.bind(this, callback),2000);
   
   
  }
  
 }
 
-var finishTuneup = function(){
+var finishTuneup = function(callback){
  console.log("performing..");
  this.tuneupcount++;
  callback();

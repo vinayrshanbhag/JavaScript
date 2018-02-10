@@ -11,7 +11,7 @@ Car.prototype.doInspect = function(){
 
 Car.prototype.report = function(){
  debug("Reporting on...");
- debug(this);
+ debug(JSON.stringify(this));
 }
 
 var car = new Car(2014);
